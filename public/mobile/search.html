@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>search.html</title>
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- 頭部 -->
+    <header class="lt-hd">
+        <h4 class="lt-title">
+            <a class="left return" href="index.html">
+                <span class="fa fa-arrow-left"></span>
+            </a>
+            搜索中心
+        </h4>
+    </header>
+
+    <!-- 主題 -->
+    <main class="lt-search">
+        <form class="mui-clearfix" action="#">
+            <input class="txt" type="text">
+            <button class="search" type="button">搜索</button>
+        </form>
+        <div class="lt-search-data">
+            <div class="data-none">暫無搜索歷史</div>
+            <div class="data-list">
+                <span>搜索歷史</span>
+                <a class="clearAll mui-pull-right" href="javascript:;">
+                    <span class="fa fa-trash"></span>
+                    清空搜索歷史
+                </a>
+
+                <ul class="mui-clear-fix">
+                    <li>1<a class="del fa fa-close" href="javascript:;"></a></li>
+                    <li>1
+                        <a class="del fa fa-close" href="javascript:;"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- 尾部 -->
+    <footer class="lt-footer">
+        <ul class="mui-clearfix">
+            <li>
+                <a href="javascript:;">
+                    <span class="mui-icon mui-icon-home"></span>
+                    首页
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span class="fa fa-bars"></span>
+                    分类
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span class="fa fa-shopping-cart"></span>
+                    购物车
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span class="fa fa-user"></span>
+                    会员中心
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script src="./assets/zepto/zepto.min.js"></script>
+<script src="./assets/zepto/touch.js"></script>
+<script src="./assets/mui/js/mui.min.js"></script>
+<script src="js/search.js"></script>
+</html>

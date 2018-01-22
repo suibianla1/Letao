@@ -1,0 +1,169 @@
+/* common */
+html,
+body {
+  height: 100%;
+}
+body,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+/* 头部 */
+.lt-hd {
+  background-color: #006699;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.lt-hd .lt-title {
+  text-align: center;
+  height: 40px;
+  color: #fff;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 17px;
+  font-weight: normal;
+}
+.lt-hd .lt-title .right {
+  color: #fff;
+  float: right;
+}
+.lt-hd .lt-title .left {
+  color: #fff;
+  float: left;
+}
+/* 尾部 */
+.lt-footer {
+  height: 50px;
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.lt-footer ul {
+  list-style: none;
+}
+.lt-footer ul li {
+  width: 25%;
+  float: left;
+  padding-top: 10px;
+}
+.lt-footer ul li a {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+.lt-footer ul li a span {
+  display: block;
+  font-size: 15px;
+}
+.lt-footer ul li .active {
+  color: orange;
+}
+.lt-main {
+  position: relative;
+  height: 100%;
+}
+.lt-main .content {
+  background-color: #fff;
+  padding: 10px;
+}
+.lt-main .content .goods .shoes a {
+  width: 33.33%;
+  float: left;
+}
+.lt-main .content .goods .shoes a img {
+  width: 100%;
+  display: block;
+}
+.lt-main .content .goods .sale {
+  border-top: 1px solid #ccc;
+}
+.lt-main .content .goods .sale .sale1 {
+  float: left;
+  width: 67%;
+}
+.lt-main .content .goods .sale .sale1 img {
+  width: 50%;
+  display: block;
+  float: left;
+}
+.lt-main .content .goods .sale .sale2 {
+  float: right;
+  width: 33%;
+}
+.lt-main .content .goods .sale .sale2 img {
+  width: 100%;
+  display: block;
+}
+.lt-main .content .goods .sale .sale3 {
+  float: left;
+  width: 67%;
+}
+.lt-main .content .goods .sale .sale3 img {
+  width: 50%;
+  display: block;
+  float: left;
+}
+.lt-main .content .brands img {
+  width: 100%;
+  display: block;
+}
+.lt-main .content .brands ul {
+  list-style: none;
+}
+.lt-main .content .brands ul li {
+  width: 25%;
+  float: left;
+}
+.lt-main .content .brands ul li img {
+  width: 100%;
+  display: block;
+}
+.lt-main .content .sport-life .good-list ul {
+  list-style: none;
+}
+.lt-main .content .sport-life .good-list ul li {
+  width: 50%;
+  float: left;
+  padding: 0 2px;
+  margin-bottom: 10px;
+}
+.lt-main .content .sport-life .good-list ul li .outline {
+  border: 1px solid #ccc;
+  font-size: 13px;
+  color: #666;
+  padding: 0 10px 18px;
+  text-align: center;
+}
+.lt-main .content .sport-life .good-list ul li .outline p {
+  margin-top: 10px;
+  font-size: 13px;
+}
+.lt-main .content .sport-life .good-list ul li .outline p .new-price {
+  color: red;
+}
+.lt-main .content .sport-life .good-list ul li .outline .btn {
+  font-size: 16px;
+  color: #fff;
+  background-color: #006699;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+.lt-main .content .sport-life .good-list ul li .outline img {
+  width: 100%;
+  display: block;
+}
+.lt-main .content .sport-life .adv img {
+  width: 100%;
+  display: block;
+}

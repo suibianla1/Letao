@@ -1,0 +1,75 @@
+/* common */
+html,
+body {
+  height: 100%;
+}
+body,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+/* 头部 */
+.lt-hd {
+  background-color: #006699;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.lt-hd .lt-title {
+  text-align: center;
+  height: 40px;
+  color: #fff;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 17px;
+  font-weight: normal;
+}
+.lt-hd .lt-title .right {
+  color: #fff;
+  float: right;
+}
+.lt-hd .lt-title .left {
+  color: #fff;
+  float: left;
+}
+/* 尾部 */
+.lt-footer {
+  height: 50px;
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.lt-footer ul {
+  list-style: none;
+}
+.lt-footer ul li {
+  width: 25%;
+  float: left;
+  padding-top: 10px;
+}
+.lt-footer ul li a {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+.lt-footer ul li a span {
+  display: block;
+  font-size: 15px;
+}
+.lt-footer ul li .active {
+  color: orange;
+}
