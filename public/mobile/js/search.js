@@ -11,6 +11,7 @@ $(function () {
             var txt = $(".txt").val();
             //判斷txt的值如果為空就退出
             if(!txt.trim()){
+                mui.toast("請輸入内容");
                 return;
             }
 
@@ -29,6 +30,9 @@ $(function () {
             //將arr添加到localstorage裏
             arr = JSON.stringify(arr);
             ls.setItem("searchData",arr);
+
+            //頁面跳轉到搜索中心
+            location.href = "searchList.html?key="+txt;
         });
 
         //刪除所有

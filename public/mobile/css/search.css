@@ -50,8 +50,8 @@ body {
   list-style: none;
 }
 .lt-search .lt-search-data .data-list ul li {
-  font-size: 16px;
-  padding: 5px 0;
+  font-size: 14px;
+  padding: 5px 10px;
 }
 .lt-search .lt-search-data .data-list ul li .del {
   float: right;

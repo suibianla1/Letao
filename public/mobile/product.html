@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>product.html</title>
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/prodcut.css">
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body> 
+    <!-- 頭部 -->
+    <header class="lt-hd">
+        <h4 class="lt-title">
+            <a class="left return" href="javascript:history.back()">
+                <span class="fa fa-arrow-left"></span>
+            </a>
+            商品詳情
+            <a class="right return" href="/mobile/index.html">
+                <span class="mui-icon mui-icon-home"></span>
+            </a>
+        </h4>
+    </header>
+
+    <!-- 主體 -->
+    <div class="lt-container">
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--輪播圖-->
+               
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- 尾部 -->
+    <footer class="lt-footer">
+        <span class="fa fa-shopping-cart"></span>
+        <div class="lt-cart">
+            <button type="button" class="cart mui-btn mui-btn-warning mui-pull-left">加入購物車</button>
+            <button type="button" class="buy mui-btn mui-btn-danger mui-pull-right">立即購買</button>
+        </div>
+    </footer>
+
+</body>
+<script src="./assets/zepto/zepto.min.js"></script>
+<script src="./assets/mui/js/mui.min.js"></script>
+<script src="./assets/artTemplate/template.js"></script>
+<script type="text/html" id="tmp">
+     <div class="mui-slider">
+        <div class="mui-slider-group mui-slider-loop">
+            <!--支持循环，需要重复图片节点-->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="javascript:;">
+                    <img src="{{pic[pic.length-1].picAddr}}" />
+                </a>
+            </div>
+            {{each pic as imgItem}}
+            <div class="mui-slider-item">
+                <a href="javascript:;">
+                    <img src="{{imgItem.picAddr}}" />
+                </a>
+            </div>
+            {{/each}}
+            <!--支持循环，需要重复图片节点-->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="javascript:;">
+                    <img src="{{pic[0].picAddr}}" />
+                </a>
+            </div>
+        </div>
+
+        <!-- 索引器 -->
+        <div class="mui-slider-indicator">
+            {{each pic as picItem index}}
+            {{if index==0}}
+            <div class="mui-indicator mui-active"></div>
+            {{/if}}
+            {{if index!=0}}
+            <div class="mui-indicator"></div>
+            {{/if}}
+            {{/each}}
+        </div>  
+    </div>
+        <!-- 產品信息 -->
+    <div class="pro-infor">
+        {{proName}}
+    </div>
+    <!-- 價格 -->
+    <div class="lt-price">
+        價格：
+        <span class="new-price">￥{{price}}</span>
+        <span class="old-price"><del>￥{{oldPrice}}</del></span>
+    </div>
+    <!-- 尺寸 -->
+    <div class="size">
+        尺碼：
+        
+       {{each sizeArr as sizeItem}}
+       <span class="pro-size">{{sizeItem}}</span>
+       {{/each}}
+    </div>
+    <!-- 數量 -->
+    <div class="number">
+        數量：
+        <div class="mui-numbox" data-numbox-min="0" data-numbox-max="{{num}}">
+            <!-- "-"按钮，点击可减小当前数值 -->
+            <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+            <input class="mui-numbox-input" type="number" />
+            <!-- "+"按钮，点击可增大当前数值 -->
+            <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+        </div>
+        剩餘：<span class="rest">{{num}}</span>&nbsp;件
+    </div>
+</script>
+<script src="./js/common.js"></script>
+<script src="./js/product.js"></script>
+
+</html>

@@ -1,0 +1,130 @@
+/* 頭部 */
+.lt-hd {
+  background-color: #006699;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  line-height: 40px;
+}
+.lt-hd .right {
+  color: #fff;
+  float: right;
+  margin-right: 10px;
+}
+.lt-hd .left {
+  color: #fff;
+  float: left;
+  margin-left: 10px;
+}
+.lt-hd .lt-title {
+  width: 100%;
+  padding: 5px 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+}
+.container {
+  height: 100%;
+  position: relative;
+}
+.container .mui-table-cell .img {
+  width: 25%;
+  float: left;
+}
+.container .mui-table-cell .img img {
+  width: 80%;
+}
+.container .mui-table-cell .pro-infor {
+  width: 75%;
+  float: left;
+}
+.container .mui-table-cell .pro-infor .price {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.container .mui-table-cell .pro-infor .price .new-price {
+  color: red;
+}
+.container .mui-table-cell .pro-infor .price .old-price {
+  color: #ccc;
+  font-size: 12px;
+}
+.container .mui-table-cell .pro-infor .price .num {
+  float: right;
+  font-size: 12px;
+  color: #666;
+}
+.container .mui-table-cell .pro-infor .Prosize {
+  font-size: 12px;
+  color: #666;
+}
+.container .mui-table-cell .check {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.container #OA_task_2 li:last-child {
+  margin-bottom: 30px;
+}
+.price-all {
+  height: 30px;
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  color: orangered;
+  z-index: 2;
+  line-height: 30px;
+  font-size: 14px;
+  padding-left: 15px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+.price-all a {
+  float: right;
+  background-color: orangered;
+  color: #fff;
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+}
+.size {
+  font-size: 14px;
+  padding: 10px 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+.size span {
+  display: inline-block;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  width: 25px;
+  height: 25px;
+}
+.size .active {
+  background-color: orange;
+  color: #fff;
+}
+.number {
+  padding-top: 10px;
+  font-size: 14px;
+}
+.number .mui-numbox {
+  width: 84px;
+  height: 30px;
+}
+.number .mui-numbox .mui-numbox-btn-minus {
+  width: 28px;
+}
+.number .mui-numbox .mui-numbox-input {
+  width: 27px !important;
+  left: 27px;
+  position: absolute;
+}
+.number .mui-numbox .mui-numbox-btn-plus {
+  width: 28px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>login.html</title>
+    <link rel="stylesheet" href="../assets/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body> 
+    <!-- 頭部 -->
+    <header class="lt-hd">
+        <h4 class="lt-title">
+            <a class="left return" href="index.html">
+                <span class="fa fa-arrow-left"></span>
+            </a>
+            登錄
+        </h4>
+    </header>
+    <!-- 登陸中心 -->
+    <div class="main">
+        <div class="container">
+            <div class="mui-input-row">
+                <input type="text" class="mui-input-clear username" value="itcast" placeholder="请输入用戶名">
+            </div>
+            <div class="mui-input-row">
+                <input type="password" class="mui-input-password password" placeholder="请输入密码">
+            </div>
+            <div class="mui-button-row">
+                <button type="button" class="mui-btn mui-btn-primary">登錄</button>
+            </div>
+            <a class="regist" href="regist.html">免費注冊</a>
+        </div>
+    </div>
+   
+        
+    <!-- 尾部 -->
+    <footer class="lt-footer">
+        <ul class="mui-clearfix">
+            <li>
+                <a href="javascript:;">
+                    <span class="mui-icon mui-icon-home"></span>
+                    首页
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span class="fa fa-bars"></span>
+                    分类
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span class="fa fa-shopping-cart"></span>
+                    购物车
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span class="fa fa-user"></span>
+                    会员中心
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script src="../assets/mui/js/mui.min.js"></script>
+<script src="../assets/zepto/zepto.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/user/login.js"></script>
+<script>
+    mui('.mui-input-row input').input(); 
+</script>
+</html>

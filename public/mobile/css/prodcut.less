@@ -1,0 +1,95 @@
+/* 主體 */
+
+.lt-container {
+    position: relative;
+    height: 100%;
+    .mui-content {
+        background-color: #fff;
+        .pro-infor {
+            margin-top: 15px;
+            height: 55px;
+            padding: 5px 15px;
+            font-size: 14px;
+            border-bottom: 1px solid #ccc;
+        }
+        .lt-price {
+            height: 50px;
+            padding: 15px 15px;
+            font-size: 14px;
+            line-height: 18px;
+            .new-price {
+                color: red;
+                font-size: 20px;
+            }
+            .old-price {
+                font-size: 12px;
+                color: #666;
+            }
+            border-bottom: 1px solid #ccc;
+        }
+        .size {
+            font-size: 14px;
+            padding: 10px 10px 15px;
+            border-bottom: 1px solid #ccc;
+            span {
+                display: inline-block;
+                line-height: 25px;
+                text-align: center;
+                margin-bottom: 10px;
+                border: 1px solid #cccccc;
+                width: 25px;
+                height: 25px;
+            }
+            .active{
+                background-color: orange;
+                color: #fff;
+            }
+        }
+        .number {
+            padding: 10px;
+            font-size: 14px;
+            border-bottom: 1px solid #ccc;
+            .mui-numbox {
+                width: 84px;
+                height: 30px;
+                .mui-numbox-btn-minus {
+                    width: 28px;
+                }
+                .mui-numbox-input {
+                    width: 27px !important;
+                    left: 27px;
+                    position: absolute;
+                }
+                .mui-numbox-btn-plus {
+                    width: 28px;
+                }
+            }
+        }
+    }
+}
+
+
+/* 尾部 */
+
+.lt-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #e6e6e6;
+    padding-left: 62px;
+    span {
+        position: absolute;
+        font-size: 20px;
+        left: 15px;
+        top: 15px;
+    }
+    .lt-cart {
+        height: 100%;
+        width: 100%;
+        padding: 10px 5px 0 0;
+        button {
+            width: 47%;
+        }
+    }
+}

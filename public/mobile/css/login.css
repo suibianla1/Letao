@@ -1,0 +1,19 @@
+body {
+  background-color: #fff;
+}
+/* 登錄中心 */
+.main .container {
+  padding: 10px;
+}
+.main .container > div.mui-button-row {
+  margin-top: 20px;
+}
+.main .container > div.mui-button-row button {
+  width: 100%;
+}
+.main .container > a {
+  font-size: 14px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+}

@@ -1,0 +1,62 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.lt-container ul {
+  background-color: #fff;
+  padding-left: 15px;
+}
+.lt-container ul li {
+  width: 100%;
+  height: 40px;
+}
+.lt-container ul li a {
+  display: block;
+  height: 100%;
+  color: #000;
+  font-size: 18px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-right: 20px;
+  font-size: 15px;
+}
+.lt-container ul li a img {
+  height: 80%;
+  margin-top: 10PX;
+}
+.lt-container ul li a:before {
+  float: right;
+}
+.lt-container ul li:first-child {
+  height: 75px;
+}
+.lt-container ul li:first-child a {
+  line-height: 75px;
+  position: relative;
+}
+.lt-container ul li:first-child a > div {
+  line-height: 16px;
+  font-size: 16px;
+  color: #000;
+  height: 100%;
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+.lt-container ul li:first-child a > div p {
+  margin-top: 2px;
+}
+.loginBtn {
+  width: 100%;
+  padding: 30px 15px;
+}
+.loginBtn a {
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #000;
+  font-size: 16px;
+}

@@ -1,0 +1,30 @@
+.lt-pwd .container {
+  padding: 15px 15px 0;
+}
+.lt-pwd .container .mui-input-row > input {
+  font-size: 14px;
+}
+.lt-pwd .container > div:nth-child(4) input {
+  width: 60%;
+  font-size: 14px;
+}
+.lt-pwd .container > div:nth-child(4) a {
+  width: 35%;
+  color: #fff;
+}
+.lt-pwd .container .CodeBtn {
+  padding: 9px 0;
+  text-align: center;
+  float: right;
+}
+.lt-pwd .container .regist {
+  margin-top: 10px;
+  width: 100%;
+}
+.lt-pwd .container .agree {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.lt-pwd .container .agree a {
+  float: right;
+}

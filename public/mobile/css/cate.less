@@ -1,0 +1,93 @@
+.lt-hd {
+    background-color: #006699;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    line-height: 40px;
+    .right {
+        color: #fff;
+        float: right;
+        margin-right: 10px;
+    }
+    .left {
+        color: #fff;
+        float: left;
+        margin-left: 10px;
+    }
+    .lt-title {
+        width: 100%;
+        padding: 5px 40px;
+        .txt {
+            height: 30px;
+            width: 100%;
+            border: none;
+            margin: 0;
+            float: left;
+            color: #000;
+        }
+    }
+}
+
+.container {
+    height: 100%;
+    padding-left: 80px;
+    position: relative;
+    background-color: #fff;
+    .mune-left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 80px;
+        height: 100%;
+        overflow: hidden;
+        li {
+            a {
+                background-color: #fff;
+                height: 50px;
+                display: block;
+                width: 100%;
+                line-height: 50px;
+                font-size: 14px;
+                color: #000;
+                text-align: center;
+                border-bottom: 1px solid #efeff4;
+            }
+            .active {
+                background-color: #efeff4;
+            }
+        }
+        li:last-child {
+            a {
+                border-bottom: 0;
+            }
+        }
+    }
+    .main {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        .mui-scroll-wrapper {
+            padding-top: 10px;
+            padding-left: 10px;
+            a {
+                width: 33.33%;
+                float: left;
+                img {
+                    width: 100%;
+                    display: block;
+                }
+                p {
+                    font-size: 12px;
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+            p {
+                text-align: center;
+                margin-top: 50px;
+            }
+        }
+    }
+}

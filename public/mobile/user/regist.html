@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
-    <title>center.html</title>
+    <title>password.html</title>
     <link rel="stylesheet" href="../assets/fontAwesome/css/font-awesome.css">
     <link rel="stylesheet" href="../assets/mui/css/mui.min.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/regist.css">
 </head>
 
 <body>
@@ -18,45 +18,37 @@
             <a class="left return" href="index.html">
                 <span class="fa fa-arrow-left"></span>
             </a>
-            個人中心
+            注冊
         </h4>
     </header>
 
-    <!-- 主題 -->
-    <div class="lt-container">
-        <ul class="lt-list">
-            <li>
-                <a class="mui-icon mui-icon-arrowright" href="javascript:;">
-                    <img src="../images/user.jpg" alt="">
-                    <div class="infor">
-                        加載中...
-                        <p>绑定手机加载中...</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a class="mui-icon mui-icon-arrowright" href="javascript:;">
-                     账号与安全
-                     
-                </a>
-            </li>
-            <li>
-                <a class="mui-icon mui-icon-arrowright" href="javascript:;">
-                     我的购物车
-                </a>
-            </li>
-            <li>
-                <a class="mui-icon mui-icon-arrowright" href="javascript:;">
-                     收货地址管理
-                </a>
-            </li>
-        </ul>
+    <!-- 主體 -->
+    <div class="lt-pwd">
+        <div class="container">
+            <div class="mui-input-row">
+                <input type="text" class="mui-input-clear username" placeholder="手機號">
+            </div>
+            <div class="mui-input-row">
+                <input type="password" class="mui-input-password password1" placeholder="密碼">
+            </div>
+            <div class="mui-input-row">
+                <input type="password" class="mui-input-password password2" placeholder="確認密碼">
+            </div>
+            <div>
+                <input type="text" class="mui-input-clear code" placeholder="請輸入驗證碼">
+                <a class="mui-btn mui-btn-primary CodeBtn" href="javascript:;">獲取驗證碼</a>
+            </div>
+            <div class="mui-button-row">
+                <a class="mui-btn mui-btn-primary regist" href="javascript:;">注冊</a>
+            </div>
+
+            <div class="agree">
+                <input type="checkbox"> 我同意《会员服务协议》
+                <a href="login.html">立即登入</a>
+            </div>
+        </div>
     </div>
 
-    <div class="loginBtn">
-        <a href="javascript:;">退出登陸</a>
-    </div>
-    
     <!-- 尾部 -->
     <footer class="lt-footer">
         <ul class="mui-clearfix">
@@ -87,5 +79,11 @@
         </ul>
     </footer>
 </body>
+<script src="./../assets/mui/js/mui.min.js"></script>
+<script src="../assets/zepto/zepto.min.js"></script>
+<script src="../js/regist.js"></script>
+<script>
+    mui('.mui-input-row input').input(); 
+</script>
 
 </html>

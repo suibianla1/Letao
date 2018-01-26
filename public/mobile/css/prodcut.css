@@ -1,0 +1,91 @@
+/* 主體 */
+.lt-container {
+  position: relative;
+  height: 100%;
+}
+.lt-container .mui-content {
+  background-color: #fff;
+}
+.lt-container .mui-content .pro-infor {
+  margin-top: 15px;
+  height: 55px;
+  padding: 5px 15px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+}
+.lt-container .mui-content .lt-price {
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 14px;
+  line-height: 18px;
+  border-bottom: 1px solid #ccc;
+}
+.lt-container .mui-content .lt-price .new-price {
+  color: red;
+  font-size: 20px;
+}
+.lt-container .mui-content .lt-price .old-price {
+  font-size: 12px;
+  color: #666;
+}
+.lt-container .mui-content .size {
+  font-size: 14px;
+  padding: 10px 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+.lt-container .mui-content .size span {
+  display: inline-block;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  width: 25px;
+  height: 25px;
+}
+.lt-container .mui-content .size .active {
+  background-color: orange;
+  color: #fff;
+}
+.lt-container .mui-content .number {
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+}
+.lt-container .mui-content .number .mui-numbox {
+  width: 84px;
+  height: 30px;
+}
+.lt-container .mui-content .number .mui-numbox .mui-numbox-btn-minus {
+  width: 28px;
+}
+.lt-container .mui-content .number .mui-numbox .mui-numbox-input {
+  width: 27px !important;
+  left: 27px;
+  position: absolute;
+}
+.lt-container .mui-content .number .mui-numbox .mui-numbox-btn-plus {
+  width: 28px;
+}
+/* 尾部 */
+.lt-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #e6e6e6;
+  padding-left: 62px;
+}
+.lt-footer span {
+  position: absolute;
+  font-size: 20px;
+  left: 15px;
+  top: 15px;
+}
+.lt-footer .lt-cart {
+  height: 100%;
+  width: 100%;
+  padding: 10px 5px 0 0;
+}
+.lt-footer .lt-cart button {
+  width: 47%;
+}
